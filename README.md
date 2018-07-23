@@ -8,7 +8,7 @@ This repository {currently} contains a faster version of the Germline Single Sam
 ├── faster\_alternative\_workflow\_with\_minimap2.wdl *&rarr;* Workflow enabled with Minimap2, Samblaster, Samtools, HaplotypeCaller \
 ├── faster\_alternative\_workflow.inputs.json *&rarr;* JSON file to support above WDL workflows
 
-In the JSON file, please follow the comments to make modifications to certail requirements. Also modify the paths to the datasets and tools where they reside in your cluster. \
+In the JSON file, please follow the comments to make modifications to certail requirements. Also modify the paths to the datasets and tools where they reside in your cluster.
 
 #### FPGA CHANGES
 Assuming the environemnt has been setup to offload the pairhmm kernel of HaplotypeCaller to FPGA - the below changes must be enabled in the WDL/JSON files (based on the comments) to make use of the FPGA. 
@@ -24,4 +24,4 @@ This workflow can also be run with other fastq files.
 
 ### TOOLS
 For on-prem, the workflow uses non-dockerized tools. The latest version of the tools used in the WDL workflow can be downloaded from their respective websites. 
-Once the tools are compiled and ready to use, please ensure https://github.com/gatk-workflows/intel-faster-alternative-samples/blob/master/faster\_alternative\_workflow.inputs.json#L47 is modified to reflect the same.
+Once the tools are compiled and ready to use, please ensure https://github.com/gatk-workflows/intel-faster-alternative-samples/blob/master/faster_alternative_workflow.inputs.json#L47 is modified to reflect the same.
